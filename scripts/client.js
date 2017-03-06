@@ -11,6 +11,12 @@ phirePhiterApp.controller('PhirePhiterController', function(){
       "lastName": "Schlangen",
       "git_username": "LukeSchlangen",
       "shoutout": "Thanks for being awesome during the angular lecture today."
+    },
+    {
+      "firstName": "Paul",
+      "lastName": "Dunkirk",
+      "git_username": "IDK",
+      "shoutout": "CSS is my main squeeze."
     }
   ];
 
