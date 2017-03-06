@@ -15,7 +15,7 @@ phirePhiterApp.controller('PhirePhiterController', function(){
     {
       "firstName": "Paul",
       "lastName": "Dunkirk",
-      "git_username": "IDK",
+      "git_username": "pauldunkirk",
       "shoutout": "CSS is my main squeeze."
     }
   ];

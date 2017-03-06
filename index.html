@@ -38,7 +38,7 @@
       <ul class="list-group">
         <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
           <!-- TODO: Create a list item for everyone in the class -->
-          {{person.firstName}} {{person.lastName}}'s shoutout is: {{person.shoutout}}<!-- include the other parameters for the person -->
+          <a ng-href="https://www.github.com/{{person.git_username}}">{{person.firstName}} {{person.lastName}}'s</a> shoutout is: {{person.shoutout}}<!-- include the other parameters for the person -->
         </li>
       </ul>
     </section>
