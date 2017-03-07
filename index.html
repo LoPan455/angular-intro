@@ -11,6 +11,14 @@
   <main ng-app="PhirePhiterApp" ng-controller="PhirePhiterController as phirePhiter">
     <section class="container">
       <h1>PhirePhiter's angular list</h1>
+
+      <label>Search by First Name: </label>
+      <input ng-model="search.firstName"/>
+      <label>Search by Last Name: </label>
+      <input ng-model="search.lastName"/>
+      <label for="">Seach by Shoutout: </label>
+      <input ng-model="search.shoutout"/>
+
       <h3>Add a new person</h3>
       <form class="col-md-12">
         <div class="form-group col-md-6">
@@ -36,7 +44,7 @@
     <section class="container">
       <h3>Class List</h3>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
+        <li class="list-group-item" ng-repeat="person in phirePhiter.people | filter:search"> <!-- What needs to be repeated? -->
           <!-- TODO: Create a list item for everyone in the class -->
           <a ng-href="https://www.github.com/{{person.git_username}}">{{person.firstName}} {{person.lastName}}'s</a> shoutout is: {{person.shoutout}}<!-- include the other parameters for the person -->
         </li>
